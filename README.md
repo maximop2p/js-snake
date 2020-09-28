@@ -1,1 +1,1 @@
-#{js snake}(https://maximosantoro.github.io/js-snake/)
+#[js snake](https://maximosantoro.github.io/js-snake/)
