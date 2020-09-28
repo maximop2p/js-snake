@@ -7,11 +7,14 @@ window.onload = function() {
 }
 
 
-snake_x = snake_y = 10;
+
 grid_size_x = 60;
 grid_size_y = 30;
+snake_x = grid_size_x / 2;
+snake_y = grid_size_y / 2;
 square = 20;
-apple_x = apple_y = 15;
+apple_x = Math.floor(Math.random() * grid_size_x);
+apple_y = Math.floor(Math.random() * grid_size_y);
 x_vel = y_vel = 0;
 trail = [];
 tail = 5;
@@ -58,18 +61,22 @@ function game() {
 function keyPush(eve) {
     switch (eve.keyCode) {
         case 37:
+            if (x_vel == 1) break;
             x_vel = -1;
             y_vel = 0;
             break;
         case 38:
+            if (y_vel == 1) break;
             x_vel = 0;
             y_vel = -1;
             break;
         case 39:
+            if (x_vel == -1) break;
             x_vel = 1;
             y_vel = 0;
             break;
         case 40:
+            if (y_vel == -1) break;
             x_vel = 0;
             y_vel = 1;
             break;
