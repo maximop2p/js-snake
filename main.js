@@ -6,8 +6,6 @@ window.onload = function() {
     setInterval(game, 50);  //refresh every 50ms
 }
 
-
-
 grid_size_x = 60;
 grid_size_y = 30;
 snake_x = grid_size_x / 2;
@@ -18,6 +16,7 @@ apple_y = Math.floor(Math.random() * grid_size_y);
 x_vel = y_vel = 0;
 trail = [];
 tail = 5;
+
 function game() {
     snake_x += x_vel;
     snake_y += y_vel;
@@ -58,6 +57,7 @@ function game() {
     cont.fillRect(apple_x * square, apple_y * square, square - 2, square - 2);
     score.innerHTML = "SCORE: " + (tail - 5);
 }
+
 function keyPush(eve) {
     switch (eve.keyCode) {
         case 37:
