@@ -1,3 +1,3 @@
-# [js snake](https://maximop2p.github.io/js-snake/)
+# [js snake](https://maximosan.github.io/js-snake/)
 
 quick snake game in plain js
